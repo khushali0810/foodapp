@@ -1,9 +1,9 @@
 <?php 
 
 $servername = "localhost";
-$username = "root";
-$password ="";
-$dbname ="food_app";
+$username = "opgtgqmy_api";
+$password ="9l*^i@zX@HTL";
+$dbname ="opgtgqmy_api";
 
 $conn = mysqli_connect($servername, $username, $password,$dbname);
 if(!$conn)
