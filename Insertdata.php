@@ -1,6 +1,6 @@
 <?php 
  include 'Connection.php';
-
+//print_r
  $EncodedData = file_get_contents('php://input');
  $DecodedData = json_decode($EncodedData,true);
 
