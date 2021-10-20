@@ -16,10 +16,10 @@ $DecodedData=$_POST;
  $dob = $DecodedData['dob'];
  
 
- $InsertQuery = "INSERT INTO customer(`customer_firstname`,`customer_lastname`,`contact_phone`,`email`,`password`,`address`,`zip_code`,`Gender`,`DOB`) VALUES ('$firstname','$lastname',$number,'$email','$pass','$address',$zipcode,'$gender',$dob)";
+   $InsertQuery = "INSERT INTO customer(`customer_firstname`,`customer_lastname`,`contact_phone`,`email`,`password`,`address`,`zip_code`,`Gender`,`DOB`) VALUES ('$firstname','$lastname','$number','$email','$pass','$address','$zipcode','$gender','$dob')";
 
 
-  $query = mysqli_query($conn, $InsertQuery);
+   $query = mysqli_query($conn, $InsertQuery);
   if($query)
   {
   	$mess ="done";
@@ -27,7 +27,7 @@ $DecodedData=$_POST;
   else{
   	$mess ="not done";
   }
-echo $mess;
+ $mess;
 $Response[] = array('message' => $mess ); 
 echo json_encode($Response);
 ?>
